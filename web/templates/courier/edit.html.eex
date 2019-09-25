@@ -1,0 +1,6 @@
+<h2>Edit courier</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: courier_path(@conn, :update, @courier) %>
+
+<span><%= link "Back", to: courier_path(@conn, :index) %></span>
